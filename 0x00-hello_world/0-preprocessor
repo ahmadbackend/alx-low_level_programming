@@ -1,1 +1,1 @@
-gcc $CFILE -Wall -Werror -Wextra -pedantic -std=gnu89 -o c
+gcc $CFILE -E  -Wall -Werror -Wextra -pedantic -std=gnu89 -o c
