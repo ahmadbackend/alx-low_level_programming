@@ -20,15 +20,9 @@ int main(void)
 			if (fi != '9')
 			{
 				com = ',';
-
+				putchar(' ');
+				putchar(com);
 			}
-			else
-			{
-				 com = '';
-
-			}
-			putchar(' ');
-			putchar(com);
 		}
 		putchar('\n');
 		return (0);
