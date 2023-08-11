@@ -10,11 +10,11 @@
 */
 int main(void)
 	{
-		char fi = '1';
+		int  fi = '1';
 
 		for (fi = '0' ; fi <= '9' ; fi++)
 		{
-			char com;
+			int com;
 
 			putchar(fi);
 			if (fi != '9')
