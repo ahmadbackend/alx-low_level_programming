@@ -6,6 +6,12 @@
 */
 int main(void)
 	{
-		fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19,");
+
+		char twist[83] = "and that piece of art is useful\" "
+
+		char twist2[] = "- Dora Korpar, 2015-10-19"
+
+		strcat(twist, twist2);
+		fprintf(stderr, "%s", twist);
 		return (1);
 	}
