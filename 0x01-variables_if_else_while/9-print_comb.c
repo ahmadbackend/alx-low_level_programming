@@ -24,7 +24,7 @@ int main(void)
 			}
 			else
 			{
-				 com = '$';
+				 com = '';
 
 			}
 			putchar(' ');
