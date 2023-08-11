@@ -17,7 +17,7 @@ int main(void)
 			int com;
 
 			putchar(fi);
-			if (fi != '9')
+			if (fi < '9')
 			{
 				com = ',';
 				putchar(' ');
