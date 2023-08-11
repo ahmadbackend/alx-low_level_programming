@@ -14,23 +14,25 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	int lastDig = n % 10;
-	char initialPart = "Last digit of ";
-	char trail[];
+	char initialPart[]  = "Last digit of ";
 
 	if (lastDig > 5)
 	{
-		trail = "and is greater than 5";
-		printf("%s%d is %d %s", initialPart, a, lastDig, trail);
+		char trail[] = "and is greater than 5";
+
+		printf("%s%d is %d %s", initialPart, n, lastDig, trail);
 	}
 	if (lastDig == 0)
 	{
-		trail = "and is 0";
-		printf("%s%d is %d %s", initialPart, a, lastDig, trail);
+		char trail[] = "and is 0";
+
+		printf("%s%d is %d %s", initialPart, n, lastDig, trail);
 	}
 	if (lastDig < 6 && lastDig > 0)
 	{
-		trail = "and is less than 6 and not 0";
-		printf("%s%d is %d %s", initialPart, a, lastDig, trail);
+		char trail[] = "and is less than 6 and not 0";
+
+		printf("%s%d is %d %s", initialPart, n, lastDig, trail);
 	}
 	return (0);
 }
