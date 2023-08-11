@@ -14,12 +14,11 @@ int main(void)
 
 		for (fi = '0' ; fi <= '9' ; fi++)
 		{
-			int com;
+			int com = ',';
 
 			putchar(fi);
 			if (fi < '9')
 			{
-				com = ',';
 				putchar(' ');
 				putchar(com);
 			}
