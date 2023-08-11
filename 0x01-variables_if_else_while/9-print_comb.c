@@ -19,8 +19,9 @@ int main(void)
 			putchar(fi);
 			if (fi < '9')
 			{
-				putchar(' ');
 				putchar(com);
+				putchar(' ');
+				
 			}
 		}
 		putchar('\n');
