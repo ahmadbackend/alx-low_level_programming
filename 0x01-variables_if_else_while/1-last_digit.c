@@ -7,7 +7,14 @@
  * main - Entry point
  *
  * Return: Always 0 (Success)
+ * getReminder - twist pointpoint
+ * num -  unmber
+ * divisor -  divisor
 */
+int getRemainder(int num, int divisor)
+{
+	return (num - divisor * (num / divisor));
+}
 int main(void)
 {
 	int n;
@@ -15,7 +22,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	int lastDig = n % 10;
+	int lastDig = getReminder(n, 10);
 	char initialPart[]  = "Last digit of ";
 
 	if (lastDig > 5)
