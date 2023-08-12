@@ -17,7 +17,7 @@ int main(void)
 	int dividedWithout;
 	float afterDiv;
 	int lastDig;
-	char initialPart[];
+	char initialPart[30];
 	char trail[30];
 
 	srand(time(0));
