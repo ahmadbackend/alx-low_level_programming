@@ -31,17 +31,17 @@ int main(void)
 	if (lastDig > 5)
 	{
 		strcpy(trail, "and is greater than 5");
-		printf("%s%d is %d %s", initialPart, n, lastDig, trail);
+		printf("%s%d is %d %s\n", initialPart, n, lastDig, trail);
 	}
 	if (lastDig == 0)
 	{
 		strcpy(trail,  "and is 0");
-		printf("%s%d is %d %s", initialPart, n, lastDig, trail);
+		printf("%s%d is %d %s\n", initialPart, n, lastDig, trail);
 	}
 	if (lastDig < 6 && lastDig != 0)
 	{
 		strcpy(trail, "and is less than 6 and not 0");
-		printf("%s%d is %d %s", initialPart, n, lastDig, trail);
+		printf("%s%d is %d %s\n", initialPart, n, lastDig, trail);
 	}
 	return (0);
 }
