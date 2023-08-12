@@ -18,7 +18,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	int dividedWithout = n / 10;
+	int dividedWithout = (int) n / 10;
 	float afterDiv = n / 10.0;
 	int lastDig = (afterDiv - dividedWithout) * 10;
 	char initialPart[]  = "Last digit of ";
