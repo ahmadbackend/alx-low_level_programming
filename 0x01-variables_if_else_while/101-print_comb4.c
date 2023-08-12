@@ -14,6 +14,9 @@ int main(void)
 		int comma;
 		int space;
 
+		first = '0';
+		second = '1';
+		third = '2';
 		comma = ',';
 		space = ' ';
 		for (first = '0' ; first <= '9' ; first++)
