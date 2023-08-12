@@ -14,9 +14,11 @@
 int main(void)
 {
 	int n;
-	int divideWithout;
+	int dividedWithout;
 	float afterDiv;
 	int lastDig;
+	char initialPart[];
+	char trail[30];
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
@@ -24,24 +26,21 @@ int main(void)
 	dividedWithout = (int) n / 10;
 	afterDiv = n / 10.0;
 	lastDig = (afterDiv - dividedWithout) * 10;
-	char initialPart[]  = "Last digit of ";
+	strcpy(initialPart, "Last digit of ");
 
 	if (lastDig > 5)
 	{
-		char trail[] = "and is greater than 5";
-
+		strcpy(trail, "and is greater than 5");
 		printf("%s%d is %d %s", initialPart, n, lastDig, trail);
 	}
 	if (lastDig == 0)
 	{
-		char trail[] = "and is 0";
-
+		strcpy(trail,  "and is 0");
 		printf("%s%d is %d %s", initialPart, n, lastDig, trail);
 	}
 	if (lastDig < 6 && lastDig != 0)
 	{
-		char trail[] = "and is less than 6 and not 0";
-
+		strcpy(trail, "and is less than 6 and not 0");
 		printf("%s%d is %d %s", initialPart, n, lastDig, trail);
 	}
 	return (0);
