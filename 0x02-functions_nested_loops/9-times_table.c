@@ -38,7 +38,7 @@ void times_table(void)
 						_putchar(' ');
 						_putchar(' ');
 					}
-					else if (totalNum >= 10)
+					else if ((inner + 1) * counter >= 10)
 						_putchar(' ');
 				}
 			}
