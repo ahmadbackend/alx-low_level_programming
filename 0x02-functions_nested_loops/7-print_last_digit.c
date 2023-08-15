@@ -6,9 +6,13 @@
 */
 int print_last_digit(int n)
 	{
-		int reminder;
+		float  reminder;
+		int retuned;
+		int remov;
 
-		reminder = (n % 10) + 48;
-		_putchar(reminder);
-		return (n % 10);
+		remov = n / 10;
+		reminder = n / 10.0;
+		retuned = (reminder - remov) *  10;
+		_putchar('0' + retuned);
+		return (retuned);
 	}
