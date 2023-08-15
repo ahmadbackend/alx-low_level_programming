@@ -8,7 +8,7 @@ int print_last_digit(int n)
 	{
 		int reminder;
 
-		reminder = n % 10;
+		reminder = (n % 10) + 48;
 		_putchar(reminder);
 		return (n % 10);
 	}
