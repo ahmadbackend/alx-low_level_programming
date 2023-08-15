@@ -1,11 +1,9 @@
-#include <unistd.h>
-#include "main.h"
-/**
- * _putchar - implementation point
- *@c: character to print
- * Return: Always number  (Success)
-*/
+#ifndef MAIN_H
+#define MAIN_H
+#include <stdio.h>
+
 int _putchar(char c)
 	{
 		return (write(1, &c, 1));
 	}
+#endif
