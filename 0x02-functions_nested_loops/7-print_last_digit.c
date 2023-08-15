@@ -7,8 +7,8 @@
 int print_last_digit(int n)
 	{
 		double  reminder;
-		int retuned;
-		int remov;
+		long int retuned;
+		long int remov;
 
 		remov = n / 10;
 		reminder = n / 10.0;
