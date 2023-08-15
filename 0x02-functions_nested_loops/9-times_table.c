@@ -33,8 +33,13 @@ void times_table(void)
 				if (inner < 9)
 				{
 					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
+					if (totalNum < 10)
+					{
+						_putchar(' ');
+						_putchar(' ');
+					}
+					else if (totalNum >= 10)
+						_putchar(' ');
 				}
 			}
 			_putchar('\n');
