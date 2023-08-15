@@ -9,13 +9,33 @@ void times_table(void)
 		int outer;
 		int inner;
 		int counter;
+		int totalNum;
+		int reminder;
+		int floored;
 
 		counter = 0;
 		for (outer = 0 ; outer <= 9 ; outer++)
 		{
 			for (inner = 0 ; inner <= 9 ; inner++)
 			{
-				_putchar((inner * counter) + '0');
+				totalNum = inner * counter;
+				if (totalNum >= 10)
+				{
+					floored = totalNum / 10;
+					reminder = totalNum % 10;
+					_putchar(floored + '0');
+					_putchar(reminder + '0');
+				}
+				else
+				{
+					_putchar(totalNum + '0');
+				}
+				if (inner < 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
 			}
 			_putchar('\n');
 			counter++;
