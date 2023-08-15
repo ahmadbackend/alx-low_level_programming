@@ -19,7 +19,6 @@ int print_last_digit(int n)
 		}
 		else
 		{
-			_putchar('-');
 			retuned = retuned * -1;
 			_putchar('0' + retuned);
 		}
