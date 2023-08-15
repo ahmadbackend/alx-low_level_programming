@@ -6,7 +6,7 @@
 */
 int print_last_digit(int n)
 	{
-		float  reminder;
+		double  reminder;
 		int retuned;
 		int remov;
 
