@@ -9,17 +9,17 @@ void jack_bauer(void)
 		int hl;
 		int ml;
 
-		for (hl = 0 ; hl <= 23 ; hl++)
+		for (hl = '0' ; hl <= '23' ; hl++)
 		{
-			for (ml = 0 ; ml <= 59 ; ml++)
+			for (ml = '0' ; ml <= '59' ; ml++)
 			{
-				if (hl < 10)
-					_putchar(0 + '0');
-				_putchar(hl + '0');
+				if (hl < '10')
+					_putchar('0');
+				_putchar(hl);
 				_putchar(':');
 				if (ml < 10)
-					_putchar(0 + '0');
-				_putchar(ml + '0');
+					_putchar('0');
+				_putchar(ml);
 				_putchar('\n');
 			}
 		}
