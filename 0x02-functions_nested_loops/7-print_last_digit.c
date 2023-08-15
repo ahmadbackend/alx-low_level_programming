@@ -13,6 +13,16 @@ int print_last_digit(int n)
 		remov = n / 10;
 		reminder = n / 10.0;
 		retuned = (reminder - remov) *  10;
-		_putchar('0' + retuned);
+		if (n >= 0)
+		{
+			_putchar('0' + retuned);
+		}
+		else
+		{
+			_putchar('-');
+			retuned = retuned * -1;
+			_putchar('0' + retuned);
+		}
+
 		return (retuned);
 	}
