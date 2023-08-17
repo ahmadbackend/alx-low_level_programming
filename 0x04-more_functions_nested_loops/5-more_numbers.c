@@ -15,7 +15,7 @@ void more_numbers(void)
 		{
 			for (dig = 0 ; dig <= 14 ; dig++)
 			{
-				if (dig > 10)
+				if (dig >= 10)
 				{
 					firstP = dig / 10;
 					remin = dig % 10;
@@ -29,5 +29,6 @@ void more_numbers(void)
 					_putchar('0' + remin);
 			}
 			_putchar('\n');
+			remin = -1;
 		}
 	}
