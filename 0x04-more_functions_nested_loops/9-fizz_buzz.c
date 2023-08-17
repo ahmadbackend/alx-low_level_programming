@@ -13,14 +13,16 @@ void FizzBuzz(void)
 		{
 			if (start % 3 == 0 || start % 5 == 0)
 			{
-				if (start % 3 == 0)
+				if (start % 3 == 0 && start % 5 != 0)
 					printf("%s", "Fizz");
-				if (start % 5 == 0)
+				if (start % 5 == 0 && start % 3 != 0)
 					printf("%s", "Buzz");
+				if (start % 5 == 0 && start % 3 == 0)
+					printf("FizzBuzz");
 			}
 			else
 				printf("%d", start);
-			_putchar(' ');
+			printf(" ");
 		}
 		printf("\n");
 	}
