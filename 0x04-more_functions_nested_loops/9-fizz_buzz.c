@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 #include <string.h>
 /**
  * main- Entry point
@@ -7,10 +7,6 @@
 int main(void)
 	{
 		int start;
-
-		char Fizz[] = "Fizz";
-		char Buzz[] = "Buzz";
-		char FizzBuzz[] = "FizzBuzz";
 
 		for (start = 1 ; start <= 100; start++)
 		{
