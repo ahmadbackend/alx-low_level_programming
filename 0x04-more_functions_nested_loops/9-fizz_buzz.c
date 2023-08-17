@@ -1,10 +1,10 @@
-#include "main.h"
+#include <stdio.h>
 #include <string.h>
 /**
- * FizzBuzz- Entry point
+ * main- Entry point
  * Return: Always 0 (Success)
 */
-void FizzBuzz(void)
+int main(void)
 	{
 		int start;
 
@@ -28,4 +28,5 @@ void FizzBuzz(void)
 			printf(" ");
 		}
 		printf("\n");
+		return (0);
 	}
