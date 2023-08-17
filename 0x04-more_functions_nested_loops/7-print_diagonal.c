@@ -7,10 +7,9 @@
 void print_diagonal(int n)
 	{
 		int cha;
-		int spac;
 
 		for (cha = 0 ; cha < n ; cha++)
 			_putchar(' ');
-		_putchar('\\');
+		_putchar(92);
 		_putchar('\n');
 	}
