@@ -10,10 +10,13 @@ void FizzBuzz(void)
 
 		for (start = 1 ; start <= 100; start++)
 		{
-			if (start % 3 == 0)
-				printf("%s", "Fizz");
-			if (start % 5 == 0)
-				printf("%s", "Buzz");
+			if (start % 3 == 0 || start % 5 == 0)
+			{
+				if (start % 3 == 0)
+					printf("%s", "Fizz");
+				if (start % 5 == 0)
+					printf("%s", "Buzz");
+			}
 			else
 				printf("%d", start);
 			_putchar(' ');
