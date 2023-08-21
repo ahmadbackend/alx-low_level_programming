@@ -5,8 +5,10 @@
 */
 void _puts(char *str)
 	{
-		int counter;
-
-		for (counter = 0; *str != '\0'; str++)
-			printf("%c", *str);
+		while (*str != '\0')
+		{
+			_putchar(*str + '0');
+			*str++;
+		}
+		_putchar('\n');
 	}
