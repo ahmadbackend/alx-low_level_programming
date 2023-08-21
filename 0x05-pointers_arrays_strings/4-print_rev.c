@@ -9,7 +9,7 @@ void print_rev(char *s)
 	{
 		int countEnd;
 
-		for (countEnd = 0 ; *s != '\0' ; *s++)
+		for (countEnd = 0 ; *s != '\0' ; s++)
 			countEnd++;
 		while (countEnd >= 0)
 		{
