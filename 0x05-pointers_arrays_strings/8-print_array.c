@@ -16,7 +16,7 @@ void print_array(int *a, int n)
 		{
 			dig = *(a + pcount);
 			printf("%d", dig);
-			if (pcounter < n-1)
+			if (pcount < n-1)
 			{
 				_putchar(',');
 				_putchar(' ');
