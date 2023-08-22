@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - check the code for
- *
+ * print_array - check the code for
+ * @n: array size
+ *@a: pointer to the array
  * Return: Always 0.
 */
 void print_array(int *a, int n)
@@ -14,7 +15,12 @@ void print_array(int *a, int n)
 		for (pcount = 0; pcount < n; pcount++)
 		{
 			dig = *(a + pcount);
-			printf("%d, ", dig);
+			printf("%d", dig);
+			if (pcounter < n-1)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 		_putchar('\n');
 	}
