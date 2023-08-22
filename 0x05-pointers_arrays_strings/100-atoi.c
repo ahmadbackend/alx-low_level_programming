@@ -1,3 +1,4 @@
+#include <stdbool.h>
 /**
  * _atoi - check the code
  *@s: string to search for integers
