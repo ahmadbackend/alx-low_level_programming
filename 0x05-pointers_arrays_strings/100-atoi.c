@@ -8,7 +8,7 @@ int _atoi(char *s)
 	{
 		int signcounter;
 		int itera;
-		int number;
+		long int number;
 		bool fnum;
 
 		signcounter = 0;
@@ -28,12 +28,7 @@ int _atoi(char *s)
 				break;
 			itera++;
 		}
-		if (number > 0)
-		{
-			if (signcounter % 2 != 0)
-				number = number * -1;
-		}
+		if (signcounter % 2 != 0)
+			number = number * -1;
 		return (number);
 	}
-		
-
