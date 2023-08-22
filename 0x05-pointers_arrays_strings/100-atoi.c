@@ -24,7 +24,7 @@ int _atoi(char *s)
 				number = number * 10 + s[itera] - '0';
 				fnum = true;
 			}
-			if (fnum && (s[itera] < 48 || s[itera] > 57)
+			if (fnum && (s[itera] < 48 || s[itera] > 57))
 				break;
 			itera++;
 		}
