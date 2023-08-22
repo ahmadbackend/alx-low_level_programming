@@ -15,12 +15,10 @@ void print_array(int *a, int n)
 		for (pcount = 0; pcount < n; pcount++)
 		{
 			dig = *(a + pcount);
-			printf("%d", dig);
 			if (pcount < n - 1)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+				printf("%d, ", dig);
+			else
+				printf("%d", dig);
 		}
-		_putchar('\n');
+		printf("\n");
 	}
