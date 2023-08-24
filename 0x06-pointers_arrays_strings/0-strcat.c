@@ -21,7 +21,7 @@ char *_strcat(char *dest, char *src)
 			dest[disSize + 1] = src[copy];
 			if (src[copy] == '\0')
 				isEnded = true;
-			copy++;	
+			copy++;
 		}
 		return (dest);
 	}
