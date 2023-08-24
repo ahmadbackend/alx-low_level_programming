@@ -9,19 +9,11 @@ char *_strcat(char *dest, char *src)
 	{
 		int disSize;
 		int copy;
-		bool isEnded;
 
 		disSize = 0;
-		copy = 0;
-		isEnded = false;
-		while (dest[disSize] != '\0')
+		while (dest[disSize])
 			disSize++;
-		while (isEnded != true)
-		{
-			dest[disSize + 1] = src[copy];
-			if (src[copy] == '\0')
-				isEnded = true;
-			copy++;
-		}
+		for  (copy = 0; src[copy]; copy++)
+			dest[disSize++] = src[copy];
 		return (dest);
 	}
