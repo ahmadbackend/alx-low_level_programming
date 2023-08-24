@@ -1,7 +1,6 @@
 #include <stdbool.h>
 /**
- * _strncat - check the code
- *@n: size t obe copied
+ * _strcat - check the code
  *@src: the string to be copied
  *@dest: string final after coping
  * Return: Always 0.
