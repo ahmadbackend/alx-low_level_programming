@@ -15,10 +15,10 @@ char *_strncat(char *dest, char *src, int n)
 		limit = 0;
 		while (dest[d])
 			d++;
-		while (src[c])
+		while (src[c] != '\0')
 		{
-			if (limit < n && n > 0)
-				dest[d++] = src[c];
+			if (limit < n)
+				dest[d + limit] = src[c];
 			else
 				break;
 			limit++;
