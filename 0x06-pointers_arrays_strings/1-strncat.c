@@ -1,7 +1,7 @@
 /**
  * _strncat - check the code
  *@dest: distination string
- *@src: source string 
+ *@src: source string
  *@n: size to be copied
  * Return: Always 0.
 */
@@ -15,13 +15,14 @@ char *_strncat(char *dest, char *src, int n)
 		limit = 0;
 		while (dest[d])
 			d++;
-		for (c = 0; src[c]; c++)
+		while (src[c])
 		{
-			if (limit <= n)
+			if (limit < n && n > 0)
 				dest[d++] = src[c];
 			else
 				break;
 			limit++;
+			c++;
 		}
 		return (dest);
 	}
