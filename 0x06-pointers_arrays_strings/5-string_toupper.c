@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * string_toupper - check the code
  *@str: letter to be uppercased
@@ -7,7 +8,7 @@ char *string_toupper(char *str)
 	{
 		int ch;
 
-		ch = 0
+		ch = 0;
 		while (*(str + ch) != '\0')
 		{
 			if (*(str + ch) >= 97 && *(str + ch) <= 122)
