@@ -6,7 +6,7 @@
  *@dest: string final after coping
  * Return: Always 0.
 */
-char *_strncat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 	{
 		int disSize;
 		int copy;
@@ -17,7 +17,7 @@ char *_strncat(char *dest, char *src, int n)
 		isEnded = false;
 		while (dest[disSize] != '\0')
 			disSize++;
-		while (disSize < n && isEnded != true)
+		while (isEnded != true)
 		{
 			dest[disSize + 1] = src[copy];
 			if (src[copy] == '\0')
