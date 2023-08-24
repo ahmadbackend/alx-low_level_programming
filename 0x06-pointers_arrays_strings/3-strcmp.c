@@ -19,7 +19,7 @@ int _strcmp(char *s1, char *s2)
 		else
 			max = lefCount;
 
-		for ( cha = 0 ; cha < max; cha++)
+		for (cha = 0 ; cha < max; cha++)
 		{
 			if (s1[cha] > s2[cha])
 				return (s1[cha] - s2[cha]);
@@ -27,7 +27,7 @@ int _strcmp(char *s1, char *s2)
 				return (s1[cha] - s2[cha]);
 			else if (s1[cha] == '\0')
 				return (s2[cha]);
-			else if(s2[cha] == '\0')
+			else if (s2[cha] == '\0')
 				return (s1[cha]);
 		}
 		return (0);
