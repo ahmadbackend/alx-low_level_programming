@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-    char *s = "hello, world";
-    char *f = "world";
+    char *s = "hello, worlk";
+    char *f = "wold";
     char *t;
 
     t = _strstr(s, f);
