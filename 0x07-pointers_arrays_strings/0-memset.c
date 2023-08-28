@@ -4,14 +4,14 @@
  *@s: the address of memory to print
  *@b: the character to be printed
  *
- * Return: Nothing.
+ * Return: success
 */
 char *_memset(char *s, char b, unsigned int n)
 	{
 		unsigned int i;
 
 		i = 0;
-		while ( i < n)
+		while (i < n)
 		{
 			*(s + i) = b;
 			i++;
