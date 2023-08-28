@@ -2,7 +2,7 @@
  * _memset - prints buffer in hexa
  *@n: the amount to be filled
  *@s: the address of memory to print
- *@b the character to be printed
+ *@b: the character to be printed
  *
  * Return: Nothing.
 */
