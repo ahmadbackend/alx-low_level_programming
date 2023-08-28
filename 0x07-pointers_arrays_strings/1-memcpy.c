@@ -4,7 +4,7 @@
  *@dest: the address of returned string
  *@src: address of copied string
  *
- * Return: Nothing.
+ * Return: string address.
 */
 char *_memcpy(char *dest, char *src, unsigned int n)
 	{
