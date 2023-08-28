@@ -1,7 +1,7 @@
 /**
  * _strspn - check the code
  *@s: source string
- *@accept: string to be searched for 
+ *@accept: string to be searched for
  * Return: Always 0.
 */
 unsigned int _strspn(char *s, char *accept)
