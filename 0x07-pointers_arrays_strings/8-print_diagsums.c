@@ -3,7 +3,7 @@
 /**
  * print_diagsums - check the code
  *@size: sub array length
- *@s: pointer to aeeay start
+ *@a: pointer to aeeay start
  * Return: Always 0.
 */
 void print_diagsums(int *a, int size)
@@ -15,7 +15,7 @@ void print_diagsums(int *a, int size)
 		for (i = 0 ; i < size ; i++)
 		{
 			left = left + a[i];
-			right = right + a[size -1 -i];
+			right = right + a[size - 1 - i];
 			a += size;
 		}
 		printf("%d, %d\n", left, right);
