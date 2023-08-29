@@ -1,3 +1,5 @@
+#include "main.h"
+#include <stdio.h>
 /**
  * print_diagsums - check the code
  *@size: sub array length
@@ -6,12 +8,15 @@
 */
 void print_diagsums(int *a, int size)
 	{
-		int left, right, i, j;
+		int left, right, i;
 
-		left = right = 0;
+		left = 0;
+		right = 0;
 		for (i = 0 ; i < size ; i++)
-			left += a[i][i];
-		for (j = size - 1; j >= 0 ; j--)
-			right += a[size - j - 1][j];
+		{
+			left = left + a[i];
+			right = right + a[size -1 -i];
+			a += size;
+		}
 		printf("%d, %d\n", left, right);
 	}
