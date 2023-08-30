@@ -1,5 +1,5 @@
 /**
- * factorial: function to return the factorial number
+ * factorial - function to return the factorial number
  *@n: the input value
  * Return: factorial value
 */
