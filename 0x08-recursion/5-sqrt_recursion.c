@@ -1,5 +1,5 @@
 /**
- * test = internal method
+ * test - internal method
  *@k : the number
  *@i: the root
  *Return: the root
@@ -9,7 +9,7 @@ int test(int i, int k)
 		if (i * i < k)
 		{
 			i = i + 1;
-			return(test(i, k));
+			return (test(i, k));
 		}
 		else if (i * i == k)
 			return (i);
